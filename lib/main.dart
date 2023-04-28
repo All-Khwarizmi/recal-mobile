@@ -56,25 +56,37 @@ class MyAppBar extends StatelessWidget {
             Expanded(
                 child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: const [
+              children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: CircleAvatar(
-                    child: Icon(Icons.score),
-                  ),
-                ),
+                    padding: EdgeInsets.all(8.0),
+                    child: CircleAvatar(
+                      child: IconButton(
+                        icon: Icon(Icons.score),
+                        onPressed: () {
+                          print("Score");
+                        },
+                      ),
+                    )),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: CircleAvatar(
-                    child: Icon(Icons.notifications),
-                  ),
-                ),
+                    padding: EdgeInsets.all(8.0),
+                    child: CircleAvatar(
+                      child: IconButton(
+                        icon: Icon(Icons.notifications),
+                        onPressed: () {
+                          print("Notifications");
+                        },
+                      ),
+                    )),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: CircleAvatar(
-                    child: Icon(Icons.add),
-                  ),
-                )
+                    padding: EdgeInsets.all(8.0),
+                    child: CircleAvatar(
+                      child: IconButton(
+                        icon: Icon(Icons.add),
+                        onPressed: () {
+                          print("Add");
+                        },
+                      ),
+                    )),
               ],
             ))
           ],
