@@ -151,6 +151,12 @@ class TopicsList extends StatefulWidget {
 class _TopicsListState extends State<TopicsList> {
   @override
   Widget build(BuildContext context) {
-    return ListView();
+    return ListView(
+      children: [
+        ListTile(
+          title: Text("test"),
+        )
+      ],
+    );
   }
 }
